@@ -19,7 +19,11 @@ const myLinks = () => {
 };
 
 const pressEnter = () => {
-  tmdb.showResults();
+  $(document).keypress((e) => {
+    if (e.key === 'Enter') {
+      tmdb.showResults('cow');
+    }
+  });
 };
 
 const initializer = () => {
