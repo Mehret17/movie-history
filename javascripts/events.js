@@ -1,4 +1,5 @@
 const tmdb = require('./tmdb');
+console.log('tmbd:', tmdb);
 
 const myLinks = () => {
   $(document).click((e) => {
