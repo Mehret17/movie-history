@@ -41,7 +41,7 @@ const saveMovieToWishListEvent = () => {
     };
     firebaseApi.saveMovieToWishList(movieToAdd)
       .then(() => {
-        movieToAddCard.remove();
+        movieToAddCard.remove(); // removing it from the dom
       })
       .catch((error) => {
         console.error('error in saving movie', error);
