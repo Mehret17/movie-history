@@ -17,9 +17,9 @@ const domString = (movieArray, config, whereToPrint, myCollectionMode = false) =
     if (!myCollectionMode) {
       strang +=       `<p><a href="#" class="btn btn-default addMovieToWishList" role="button">Wishlist</a></p>`;
     } else if (myCollectionMode && !movie.isWatched) {
-      strang += `<p><a class="btn btn-primary updateMovieToWatched" role="button">I've Watched It</a>`;
+      strang += `<a class="btn btn-primary updateMovieToWatched" role="button">I've Watched It</a>`;
     } else {
-      strang += `<p>I'm going to put star rating here one day.<p>`;
+      strang += `<p>I'm going to put star rating here one day.</p>`;
     }
     strang +=     `</div>`;
     strang +=   `</div>`;
